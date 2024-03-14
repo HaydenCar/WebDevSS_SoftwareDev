@@ -6,7 +6,7 @@
     <!-- slider section -->
     <section class="slider_section ">
         <div class="slider_bg_box">
-            <img src="images/slider-bg.jpg" alt="">
+            <img src="images/nightlife.jpeg" alt="">
         </div>
         <div id="customCarousel1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -16,8 +16,8 @@
                             <div class="col-md-7 ">
                                 <div class="detail-box">
                                     <h1>
-                                        We Provide best <br>
-                                        Transport Service
+                                        We Provide The Best <br>
+                                        Events Packages
                                     </h1>
                                     <p>
                                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magnam, voluptates distinctio, officia architecto tenetur debitis hic aspernatur libero commodi atque fugit adipisci, blanditiis quidem dolorum odit voluptas? Voluptate, eveniet?
@@ -38,7 +38,7 @@
                             <div class="col-md-7 ">
                                 <div class="detail-box">
                                     <h1>
-                                        We Provide best <br>
+                                        We Provide The Best <br>
                                         Party Service
                                     </h1>
                                     <p>
@@ -60,7 +60,7 @@
                             <div class="col-md-7 ">
                                 <div class="detail-box">
                                     <h1>
-                                        We Provide best <br>
+                                        We Provide The Best <br>
                                         Party Service
                                     </h1>
                                     <p>
@@ -110,7 +110,7 @@
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Air Transport
+                                Nightclub Events
                             </h5>
                             <p>
                                 fact that a reader will be distracted by the readable content of a page when looking at its layout.
@@ -130,7 +130,7 @@
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Cargo Transport
+                                Concerts
                             </h5>
                             <p>
                                 fact that a reader will be distracted by the readable content of a page when looking at its layout.
@@ -150,7 +150,7 @@
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Trucks Transport
+                                Info
                             </h5>
                             <p>
                                 fact that a reader will be distracted by the readable content of a page when looking at its layout.
@@ -170,7 +170,7 @@
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Train Transport
+
                             </h5>
                             <p>
                                 fact that a reader will be distracted by the readable content of a page when looking at its layout.
