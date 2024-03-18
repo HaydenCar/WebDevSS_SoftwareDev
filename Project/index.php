@@ -6,7 +6,7 @@
     <!-- slider section -->
     <section class="slider_section ">
         <div class="slider_bg_box">
-            <img src="images/slider-bg.jpg" alt="">
+            <img src="images/girlsdance.jpeg" alt="">
         </div>
         <div id="customCarousel1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -106,7 +106,7 @@
                 <div class="col-md-6 ">
                     <div class="box ">
                         <div class="img-box">
-                            <img src="images/s1.png" alt="">
+                            <img src="images/champagne.jpeg" alt="">
                         </div>
                         <div class="detail-box">
                             <h5>
@@ -124,7 +124,7 @@
                 <div class="col-md-6 ">
                     <div class="box ">
                         <div class="img-box">
-                            <img src="images/s2.png" alt="">
+                            <img src="images/concert.jpeg" alt="">
                         </div>
                         <div class="detail-box">
                             <h5>
@@ -142,7 +142,7 @@
                 <div class="col-md-6 ">
                     <div class="box ">
                         <div class="img-box">
-                            <img src="images/s3.png" alt="">
+                            <img src="images/dj.avif" alt="">
                         </div>
                         <div class="detail-box">
                             <h5>
@@ -160,7 +160,7 @@
                 <div class="col-md-6 ">
                     <div class="box ">
                         <div class="img-box">
-                            <img src="images/s4.png" alt="">
+                            <img src="images/party.jpeg" alt="">
                         </div>
                         <div the="detail-box">
                             <h5>
@@ -205,7 +205,7 @@
             </div>
             <div class="col-md-6 ">
                 <div class="img-box">
-                    <img src="images/about-img.jpg" alt="">
+                    <img src="images/nightlife.jpeg" alt="">
                 </div>
             </div>
 

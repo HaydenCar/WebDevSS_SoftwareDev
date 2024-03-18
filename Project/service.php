@@ -67,7 +67,7 @@
                 <div class="col-md-6 ">
                     <div class="box ">
                         <div class="img-box">
-                            <img src="images/nightclub.jpg" alt=""> <!-- change image hayden -->
+                            <img src="images/party.jpeg" alt=""> <!-- change image hayden -->
                         </div>
                         <div class="detail-box">
                             <h5>
@@ -85,7 +85,7 @@
                 <div class="col-md-6 ">
                     <div class="box ">
                         <div class="img-box">
-                            <img src="images/concert.jpg" alt=""> <!-- change image hayden -->
+                            <img src="images/ticket.webp" alt=""> <!-- change image hayden -->
                         </div>
                         <div class="detail-box">
                             <h5>
@@ -103,7 +103,7 @@
                 <div class="col-md-6 ">
                     <div class="box ">
                         <div class="img-box">
-                            <img src="images/dj.jpg" alt=""> <!-- change image hayden -->
+                            <img src="images/dj.avif" alt=""> <!-- change image hayden -->
                         </div>
                         <div class="detail-box">
                             <h5>
@@ -121,7 +121,7 @@
                 <div class="col-md-6 ">
                     <div class="box ">
                         <div class="img-box">
-                            <img src="images/event-planning.jpg" alt=""> <!-- change image hayden -->
+                            <img src="images/eventer.jpeg" alt=""> <!-- change image hayden -->
                         </div>
                         <div class="detail-box">
                             <h5>

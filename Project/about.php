@@ -59,7 +59,7 @@
             </div>
             <div class="col-md-6 ">
                 <div class="img-box">
-                    <img src="images/about-nightlife.jpg" alt="An image capturing the vibrant nightlife atmosphere, with a crowd enjoying a live performance, showcasing the essence of your events">
+                    <img src="images/nightlife.jpeg" alt="An image capturing the vibrant nightlife atmosphere, with a crowd enjoying a live performance, showcasing the essence of your events">
                 </div>
             </div>
 
