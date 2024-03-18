@@ -1,3 +1,5 @@
+<?php require 'layout/header.php'?>
+
 <?php
 global $con;
 session_start();
@@ -22,4 +24,3 @@ $user_data = check_login($con);
     </body>
     </html>
 </DOCTYPE>
-<?php require "layout/footer.php" ?>

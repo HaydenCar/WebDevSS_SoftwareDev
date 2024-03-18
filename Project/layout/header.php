@@ -41,7 +41,7 @@
                 <a href="">
                     <i class="fa fa-phone" aria-hidden="true"></i>
                     <span>
-                Call : +01 123455678990
+                Call : +353 872679314
               </span>
                 </a>
                 <a href="">
@@ -82,9 +82,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="about.php"> About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.php">Contact Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="indexlogin.php"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>

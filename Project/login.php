@@ -1,3 +1,5 @@
+<?php require 'layout/header.php'?>
+
 <?php
 global $con;
 session_start();

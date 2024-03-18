@@ -1,3 +1,5 @@
+<?php require 'layout/header.php'?>
+
 <!DOCTYPE html>
 <html>
 
@@ -8,13 +10,9 @@
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <!-- Site Metas -->
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
     <link rel="shortcut icon" href="images/fevicon.png" type="">
 
-    <title> Carint </title>
-
+    <title> Nightlife Events </title>
 
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -36,71 +34,15 @@
 </head>
 
 <body class="sub_page">
-
-<div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
-        <div class="header_top">
-            <div class="container-fluid ">
-                <div class="contact_nav">
-                    <a href="">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <span>
-                Call : +01 123455678990
-              </span>
-                    </a>
-                    <a href="">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <span>
-                Email : demo@gmail.com
-              </span>
-                    </a>
-                    <a href="">
-                        <i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <span>
-                Location
-              </span>
-                    </a>
-                </div>
-            </div>
-        </div>
         <div class="header_bottom">
             <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
                     <a class="navbar-brand" href="index.php">
-              <span>
-                Carint
-              </span>
+                        <span>
+                            Nightlife Events
+                        </span>
                     </a>
-
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class=""> </span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav  ">
-                            <li class="nav-item ">
-                                <a class="nav-link" href="index.php">Home </a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="service.php">Services <span class="sr-only">(current)</span> </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.php"> About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="contact.php">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
-                            </li>
-                            <form class="form-inline">
-                                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </button>
-                            </form>
-                        </ul>
-                    </div>
+                    <!-- Navigation Links -->
                 </nav>
             </div>
         </div>
@@ -118,23 +60,57 @@
                     Our <span>Services</span>
                 </h2>
                 <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                    Dive into the vibrant world of nightlife and concerts with our exclusive services designed to provide an unforgettable experience.
                 </p>
             </div>
             <div class="row">
                 <div class="col-md-6 ">
                     <div class="box ">
                         <div class="img-box">
-                            <img src="images/s1.png" alt="">
+                            <img src="images/nightclub.jpg" alt=""> <!-- change image hayden -->
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Air Transport
+                                Nightclub Reservations
                             </h5>
                             <p>
-                                fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                The
-                                point of using
+                                Secure your spot at the hottest nightclubs. Enjoy VIP access, table service, and a night to remember.
+                            </p>
+                            <a href="">
+                                Learn More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="images/concert.jpg" alt=""> <!-- change image hayden -->
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                Concert Tickets & Packages
+                            </h5>
+                            <p>
+                                Get front-row tickets to see your favorite artists. Explore our packages for an all-inclusive concert experience.
+                            </p>
+                            <a href="">
+                                Discover More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="box ">
+                        <div class="img-box">
+                            <img src="images/dj.jpg" alt=""> <!-- change image hayden -->
+                        </div>
+                        <div class="detail-box">
+                            <h5>
+                                DJ Booking
+                            </h5>
+                            <p>
+                                Book top DJs for your private events or club nights. Let us handle the vibes while you dance the night away.
                             </p>
                             <a href="">
                                 Read More
@@ -145,59 +121,17 @@
                 <div class="col-md-6 ">
                     <div class="box ">
                         <div class="img-box">
-                            <img src="images/s2.png" alt="">
+                            <img src="images/event-planning.jpg" alt=""> <!-- change image hayden -->
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Cargo Transport
+                                Event Planning & Management
                             </h5>
                             <p>
-                                fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                The
-                                point of using
+                                From intimate gatherings to grand-scale concerts, our team will ensure your event is a seamless success.
                             </p>
                             <a href="">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="box ">
-                        <div class="img-box">
-                            <img src="images/s3.png" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Trucks Transport
-                            </h5>
-                            <p>
-                                fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                The
-                                point of using
-                            </p>
-                            <a href="">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 ">
-                    <div class="box ">
-                        <div class="img-box">
-                            <img src="images/s4.png" alt="">
-                        </div>
-                        <div class="detail-box">
-                            <h5>
-                                Train Transport
-                            </h5>
-                            <p>
-                                fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                The
-                                point of using
-                            </p>
-                            <a href="">
-                                Read More
+                                Learn More
                             </a>
                         </div>
                     </div>
@@ -209,104 +143,76 @@
 
 <!-- end service section -->
 
-<!-- info section -->
+        <!-- info section -->
 
-<section class="info_section layout_padding2">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-lg-3 info_col">
-                <div class="info_contact">
-                    <h4>
-                        Address
-                    </h4>
-                    <div class="contact_link_box">
-                        <a href="">
-                            <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            <span>
+        <section class="info_section layout_padding2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 info_col">
+                        <div class="info_contact">
+                            <h4>
+                                Address
+                            </h4>
+                            <div class="contact_link_box">
+                                <a href="">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                    <span>
                   Location
                 </span>
-                        </a>
-                        <a href="">
-                            <i class="fa fa-phone" aria-hidden="true"></i>
-                            <span>
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <span>
                   Call +01 1234567890
                 </span>
-                        </a>
-                        <a href="">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                            <span>
-                  demo@gmail.com
+                                </a>
+                                <a href="">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span>
+                  HII@gmail.com
                 </span>
-                        </a>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info_social">
+                            <a href="">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <div class="info_social">
-                    <a href="">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a href="">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 info_col">
-                <div class="info_detail">
-                    <h4>
-                        Info
-                    </h4>
-                    <p>
-                        necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-2 mx-auto info_col">
-                <div class="info_link_box">
-                    <h4>
-                        Links
-                    </h4>
-                    <div class="info_links">
-                        <a class="active" href="index.php">
-                            <img src="images/nav-bullet.png" alt="">
-                            Home
-                        </a>
-                        <a class="" href="about.php">
-                            <img src="images/nav-bullet.png" alt="">
-                            About
-                        </a>
-                        <a class="" href="service.php">
-                            <img src="images/nav-bullet.png" alt="">
-                            Services
-                        </a>
 
-                        <a class="" href="contact.php">
-                            <img src="images/nav-bullet.png" alt="">
-                            Contact Us
-                        </a>
+                    <div class="col-md-6 col-lg-2 mx-auto info_col">
+                        <div class="info_link_box">
+                            <h4>
+                                Links
+                            </h4>
+                            <div class="info_links">
+                                <a class="active" href="index.php">
+                                    <img src="images/nav-bullet.png" alt="">
+                                    Home
+                                </a>
+                                <a class="" href="about.php">
+                                    <img src="images/nav-bullet.png" alt="">
+                                    About
+                                </a>
+                                <a class="" href="service.php">
+                                    <img src="images/nav-bullet.png" alt="">
+                                    Services
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3 info_col ">
-                <h4>
-                    Subscribe
-                </h4>
-                <form action="#">
-                    <input type="text" placeholder="Enter email" />
-                    <button type="submit">
-                        Subscribe
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- end info section -->
+                </div>
+        </section>
+
+        <!-- end info section -->
 
 <!-- footer section -->
 <section class="footer_section">

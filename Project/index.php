@@ -6,7 +6,7 @@
     <!-- slider section -->
     <section class="slider_section ">
         <div class="slider_bg_box">
-            <img src="images/nightlife.jpeg" alt="">
+            <img src="images/slider-bg.jpg" alt="">
         </div>
         <div id="customCarousel1" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -16,15 +16,15 @@
                             <div class="col-md-7 ">
                                 <div class="detail-box">
                                     <h1>
-                                        We Provide The Best <br>
-                                        Events Packages
+                                        Your Gateway to Unforgettable <br>
+                                        Nights & Concerts
                                     </h1>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magnam, voluptates distinctio, officia architecto tenetur debitis hic aspernatur libero commodi atque fugit adipisci, blanditiis quidem dolorum odit voluptas? Voluptate, eveniet?
+                                        Dive into the heart of the nightlife with our curated events and top-tier concert experiences. Whether it’s the pulse of the dance floor or the surge of live music, we connect you with unforgettable moments.
                                     </p>
                                     <div class="btn-box">
                                         <a href="" class="btn1">
-                                            Get A Quote
+                                            Discover Events
                                         </a>
                                     </div>
                                 </div>
@@ -38,15 +38,15 @@
                             <div class="col-md-7 ">
                                 <div class="detail-box">
                                     <h1>
-                                        We Provide The Best <br>
-                                        Party Service
+                                        Experience the Best <br>
+                                        Live Music Events
                                     </h1>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magnam, voluptates distinctio, officia architecto tenetur debitis hic aspernatur libero commodi atque fugit adipisci, blanditiis quidem dolorum odit voluptas? Voluptate, eveniet?
+                                        From intimate gigs to major festivals, explore a diverse lineup of musical talents and genres. Embrace the live music scene with events that resonate with your rhythm.
                                     </p>
                                     <div class="btn-box">
                                         <a href="" class="btn1">
-                                            Get A Quote
+                                            Find Concerts
                                         </a>
                                     </div>
                                 </div>
@@ -60,15 +60,15 @@
                             <div class="col-md-7 ">
                                 <div class="detail-box">
                                     <h1>
-                                        We Provide The Best <br>
-                                        Party Service
+                                        Nightlife & Parties <br>
+                                        That Never End
                                     </h1>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum magnam, voluptates distinctio, officia architecto tenetur debitis hic aspernatur libero commodi atque fugit adipisci, blanditiis quidem dolorum odit voluptas? Voluptate, eveniet?
+                                        Step into the vibrant world of nightclubs and exclusive parties. Discover venues that set the stage for nights filled with music, dance, and memories waiting to be made.
                                     </p>
                                     <div class="btn-box">
                                         <a href="" class="btn1">
-                                            Get A Quote
+                                            Join the Party
                                         </a>
                                     </div>
                                 </div>
@@ -96,10 +96,10 @@
         <div class="container ">
             <div class="heading_container">
                 <h2>
-                    Our <span>Services</span>
+                    Our <span>Events</span>
                 </h2>
                 <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+                    Explore a world where music, dance, and culture fuse together to create unforgettable experiences. Our events are crafted to bring people together and make every night a story worth telling.
                 </p>
             </div>
             <div class="row">
@@ -110,12 +110,10 @@
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Nightclub Events
+                                Club Nights
                             </h5>
                             <p>
-                                fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                The
-                                point of using
+                                Experience the essence of nightlife with our selection of club nights. Each event is a journey into the heart of music and dance, offering a unique atmosphere and energy.
                             </p>
                             <a href="">
                                 Read More
@@ -130,12 +128,10 @@
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Concerts
+                                Live Concerts
                             </h5>
                             <p>
-                                fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                The
-                                point of using
+                                From emerging talents to global icons, our live concerts span genres and styles, delivering powerful performances and unforgettable memories.
                             </p>
                             <a href="">
                                 Read More
@@ -150,12 +146,10 @@
                         </div>
                         <div class="detail-box">
                             <h5>
-                                Info
+                                DJ Sets & Electronic
                             </h5>
                             <p>
-                                fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                The
-                                point of using
+                                Get lost in the beats with DJ sets and electronic music events that showcase cutting-edge soundscapes and vibrant dance floors.
                             </p>
                             <a href="">
                                 Read More
@@ -168,14 +162,12 @@
                         <div class="img-box">
                             <img src="images/s4.png" alt="">
                         </div>
-                        <div class="detail-box">
+                        <div the="detail-box">
                             <h5>
-
+                                Exclusive Parties
                             </h5>
                             <p>
-                                fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                The
-                                point of using
+                                Dive into exclusive parties with curated themes, top-tier entertainment, and a guest list that guarantees an elite nightlife experience.
                             </p>
                             <a href="">
                                 Read More
@@ -204,10 +196,7 @@
                         </h2>
                     </div>
                     <p>
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
-                        in some form, by injected humour, or randomised words which don't look even slightly believable. If you
-                        are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
-                        the middle of text. All
+                        At the core of the nightlife and concert scene, we stand as a beacon for those seeking the thrill of live music, dance, and social gatherings. Our passion for creating spaces where memories are made and shared drives us to deliver only the best events.
                     </p>
                     <a href="">
                         Read More
@@ -220,42 +209,8 @@
                 </div>
             </div>
 
-        </div>
-    </div>
 </section>
-
 <!-- end about section -->
-
-<!-- track section -->
-
-<section class="track_section layout_padding">
-    <div class="track_bg_box">
-        <img src="images/track-bg.jpg" alt="">
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="heading_container">
-                    <h2>
-                        Track your quote
-                    </h2>
-                </div>
-                <p>
-                    Iste reprehenderit maiores facilis saepe cumque molestias. Labore iusto excepturi, laborum aliquid pariatur veritatis autem, mollitia sint nesciunt hic error porro.
-                    Deserunt officia unde repellat beatae ipsum sed. Aperiam tempora consectetur voluptas magnam maxime asperiores quas similique repudiandae, veritatis reiciendis harum fuga atque.
-                </p>
-                <form action="">
-                    <input type="text" placeholder="Enter Your Tracking Number" />
-                    <button type="submit">
-                        Track
-                    </button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- end track section -->
 
 <!-- client section -->
 
@@ -263,7 +218,7 @@
     <div class="container">
         <div class="heading_container">
             <h2>
-                What Says Our <span>Client</span>
+                What Our <span>Guests Say</span>
             </h2>
         </div>
         <div class="client_container">
@@ -273,19 +228,19 @@
                         <div class="box">
                             <div class="detail-box">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    "The vibe at their events is unmatched! I've been to numerous club nights and concerts, and each time it's a unique experience. Great music, awesome crowd, and smooth organization. Can't wait for the next one!"
                                 </p>
                             </div>
                             <div class="client_id">
                                 <div class="img-box">
-                                    <img src="images/client-1.png" alt="" class="img-1">
+                                    <img src="images/guest-1.png" alt="" class="img-1">
                                 </div>
                                 <div class="name">
                                     <h6>
-                                        Adipiscing
+                                        Jordan
                                     </h6>
                                     <p>
-                                        Magna
+                                        Concert Enthusiast
                                     </p>
                                 </div>
                             </div>
@@ -295,19 +250,19 @@
                         <div class="box">
                             <div class="detail-box">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    "I booked a VIP table for my friend's bachelorette, and we were treated like royalty! The service was impeccable, and the DJ had us dancing all night. It was an unforgettable experience, highly recommended."
                                 </p>
                             </div>
                             <div class="client_id">
                                 <div class="img-box">
-                                    <img src="images/client-2.png" alt="" class="img-1">
+                                    <img src="images/guest-2.png" alt="" class="img-1">
                                 </div>
                                 <div class="name">
                                     <h6>
-                                        Adipiscing
+                                        Mia
                                     </h6>
                                     <p>
-                                        Magna
+                                        Party Planner
                                     </p>
                                 </div>
                             </div>
@@ -317,19 +272,19 @@
                         <div class="box">
                             <div class="detail-box">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    "As a touring DJ, playing at their venues has always been a highlight. The crowd is always energetic, and the staff makes sure everything goes smoothly. They truly know how to throw a party!"
                                 </p>
                             </div>
                             <div class="client_id">
                                 <div class="img-box">
-                                    <img src="images/client-1.png" alt="" class="img-1">
+                                    <img src="images/dj-1.png" alt="" class="img-1">
                                 </div>
                                 <div class="name">
                                     <h6>
-                                        Adipiscing
+                                        DJ Alex
                                     </h6>
                                     <p>
-                                        Magna
+                                        International DJ
                                     </p>
                                 </div>
                             </div>
@@ -339,19 +294,19 @@
                         <div class="box">
                             <div class="detail-box">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    "Their event management team helped us launch our album in a way we only dreamed of. The venue, the setup, the promotion – everything was spot on. They're the go-to for any artist looking to make an impact."
                                 </p>
                             </div>
                             <div class="client_id">
                                 <div class="img-box">
-                                    <img src="images/client-2.png" alt="" class="img-1">
+                                    <img src="images/artist-1.png" alt="" class="img-1">
                                 </div>
                                 <div class="name">
                                     <h6>
-                                        Adipiscing
+                                        The Soundwaves
                                     </h6>
                                     <p>
-                                        Magna
+                                        Indie Band
                                     </p>
                                 </div>
                             </div>
@@ -364,6 +319,7 @@
 </section>
 
 <!-- end client section -->
+
 
 <!-- contact section -->
 <section class="contact_section">
@@ -452,23 +408,11 @@
                         <i class="fa fa-twitter" aria-hidden="true"></i>
                     </a>
                     <a href="">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    </a>
-                    <a href="">
                         <i class="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 info_col">
-                <div class="info_detail">
-                    <h4>
-                        Info
-                    </h4>
-                    <p>
-                        necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-                    </p>
-                </div>
-            </div>
+
             <div class="col-md-6 col-lg-2 mx-auto info_col">
                 <div class="info_link_box">
                     <h4>
@@ -487,25 +431,10 @@
                             <img src="images/nav-bullet.png" alt="">
                             Services
                         </a>
-                        <a class="" href="contact.php">
-                            <img src="images/nav-bullet.png" alt="">
-                            Contact Us
-                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3 info_col ">
-                <h4>
-                    Subscribe
-                </h4>
-                <form action="#">
-                    <input type="text" placeholder="Enter email" />
-                    <button type="submit">
-                        Subscribe
-                    </button>
-                </form>
-            </div>
-        </div>
+
     </div>
 </section>
 
