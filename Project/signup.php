@@ -6,10 +6,10 @@ include("function.php");
 
 if($_SERVER['REQUEST_METHOD'] == "POST") {
     $user_name = $_POST['user_name'];
-    $password = $_POST['password']; // Consider hashing this password
+    $password = $_POST['password'];
 
     if(!empty($user_name) && !empty($password) && !is_numeric($user_name)) {
-        $user_id = random_num(20); // Adjust the length as needed
+        $user_id = random_num(5);
         $query = "INSERT INTO users (user_id, user_name, password, date) VALUES (:user_id, :user_name, :password, NOW())";
         $stmt = $pdo->prepare($query);
         $stmt->execute(['user_id' => $user_id, 'user_name' => $user_name, 'password' => $password]);

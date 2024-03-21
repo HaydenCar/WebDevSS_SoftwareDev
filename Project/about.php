@@ -13,7 +13,7 @@
     <meta name="author" content="" />
     <link rel="shortcut icon" href="images/fevicon.png" type="">
 
-    <title> Carint </title>
+    <title> Disco </title>
 
 
     <!-- bootstrap core css -->
