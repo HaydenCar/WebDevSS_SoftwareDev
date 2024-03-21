@@ -1,21 +1,19 @@
 <?php
 
-function check_login($con)
-{
-    if(isset($_SESSION['user_id']))
-    {
-        $id = $_SESSION['user_id'];
-        $query = "select * from users where user_id = $id limit 1";
 
-        $result = mysqli_query($con,$query);
-        if($result && mysqli_num_rows($result) > 0)
-        {
-            $user_data = mysqli_fetch_assoc($result);
+function check_login($pdo)
+{
+    if (isset($_SESSION['user_id'])) {
+        $id = $_SESSION['user_id'];
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE user_id = :id LIMIT 1");
+        $stmt->execute(['id' => $id]);
+
+        if ($stmt && $stmt->rowCount() > 0) {
+            $user_data = $stmt->fetch(PDO::FETCH_ASSOC);
             return $user_data;
         }
     }
 
-    //redirect to login
     header("Location: login.php");
     die;
 }
@@ -23,17 +21,16 @@ function check_login($con)
 function random_num($length)
 {
     $text = "";
-    if($length < 5)
-    {
+    if ($length < 5) {
         $length = 5;
     }
 
-    $len = rand(4,$length);
+    $len = rand(4, $length);
 
-    for ($i=0; $i <$len; $i++) {
-
-        $text .= rand(0,9);
+    for ($i = 0; $i < $len; $i++) {
+        $text .= rand(0, 9);
     }
 
     return $text;
 }
+

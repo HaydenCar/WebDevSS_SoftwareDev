@@ -1,33 +1,25 @@
 <?php
-global $con;
+global $pdo;
 session_start();
-
 include("connection.php");
 include("function.php");
 
-
-if($_SERVER['REQUEST_METHOD'] == "POST")
-{
-
+if($_SERVER['REQUEST_METHOD'] == "POST") {
     $user_name = $_POST['user_name'];
-    $password = $_POST['password'];
+    $password = $_POST['password']; // Consider hashing this password
 
-    if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
-    {
-
-
-        $user_id = random_num(10);
-        $query = "INSERT INTO users (user_id, user_name, password, date) VALUES ('$user_id','$user_name','$password' , NOW())";
-
-        mysqli_query($con, $query);
+    if(!empty($user_name) && !empty($password) && !is_numeric($user_name)) {
+        $user_id = random_num(20); // Adjust the length as needed
+        $query = "INSERT INTO users (user_id, user_name, password, date) VALUES (:user_id, :user_name, :password, NOW())";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute(['user_id' => $user_id, 'user_name' => $user_name, 'password' => $password]);
 
         header("Location: login.php");
         die;
-    }else{
-        echo "Please eneter some valid information!";
+    } else {
+        echo "Please enter some valid information!";
     }
 }
-
 ?>
 
 <DOCTYPE html>

@@ -1,14 +1,15 @@
-<?php require 'layout/header.php'?>
+<?php global $pdo;
+require 'layout/header.php'?>
 
 <?php
-global $con;
 session_start();
+
 include("connection.php");
 include("function.php");
 
-$user_data = check_login($con);
-
+$user_data = check_login($pdo);
 ?>
+
 <DOCTYPE html>
     <html>
     <head>

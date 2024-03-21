@@ -84,8 +84,12 @@
                             <a class="nav-link" href="about.php"> About</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="booking.php"> <i class="fa fa-user" aria-hidden="true"></i> Buy Tickets</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="indexlogin.php"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
                         </li>
+
                         <form class="form-inline">
                             <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                                 <i class="fa fa-search" aria-hidden="true"></i>

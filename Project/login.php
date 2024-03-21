@@ -1,46 +1,34 @@
-<?php require 'layout/header.php'?>
+<?php global $pdo;
+require 'layout/header.php'?>
 
 <?php
-global $con;
 session_start();
 
 include("connection.php");
 include("function.php");
 
-
-if($_SERVER['REQUEST_METHOD'] == "POST")
-{
-
+if($_SERVER['REQUEST_METHOD'] == "POST") {
     $user_name = $_POST['user_name'];
     $password = $_POST['password'];
 
-    if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
-    {
+    if(!empty($user_name) && !empty($password) && !is_numeric($user_name)) {
+        $query = "SELECT * FROM users WHERE user_name = :user_name LIMIT 1";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute(['user_name' => $user_name]);
 
-        //read from database
-        $query = "select * from users where user_name = '$user_name' limit 1";
-
-        $result = mysqli_query($con, $query);
-
-        if($result){
-            if($result && mysqli_num_rows($result) > 0)
-            {
-                $user_data = mysqli_fetch_assoc($result);
-
-                if($user_data['password'] === $password)
-                {
-                    $_SESSION['user_id'] = $user_data['user_id'];
-                    header("Location: index.php");
-                    die;
-                }
+        if($stmt && $stmt->rowCount() > 0) {
+            $user_data = $stmt->fetch(PDO::FETCH_ASSOC);
+            if($user_data['password'] === $password) {
+                $_SESSION['user_id'] = $user_data['user_id'];
+                header("Location: index.php");
+                die;
             }
         }
         echo "Wrong username or password!";
-    }else{
+    } else {
         echo "Wrong username or password!";
     }
 }
-
 ?>
 
 <DOCTYPE html>
