@@ -70,7 +70,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         }
 
         #box{
-            background-color: grey;
+            background-color: #04233b;
             margin:auto;
             width: 300px;
             padding: 20px;
@@ -95,3 +95,4 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     </html>
 </DOCTYPE>
 
+<?php require "layout/footer.php" ?>

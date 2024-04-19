@@ -1,6 +1,7 @@
 <?php
 // Start or resume a session to track user state across different pages
 global $pdo;
+require "layout/header.php";
 session_start();
 
 // Include database connection settings specific to the events
@@ -68,7 +69,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 
     #box {
-        background-color: grey;
+        background-color: #04233b;
         margin: auto;
         width: 300px;
         padding: 20px;
@@ -91,3 +92,4 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 </div>
 </body>
 </html>
+<?php require "layout/footer.php"?>

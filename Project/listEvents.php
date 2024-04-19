@@ -53,3 +53,4 @@ if (empty($events)) {
 
 </body>
 </html>
+ <?php require "layout/footer.php"?>
