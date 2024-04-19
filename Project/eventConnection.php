@@ -1,9 +1,9 @@
 <?php
 global $username;
 $host = 'localhost';
-$dbname = 'event_management';
+$dbname = 'combined_db';
 $username = 'root';
-$pass = 'Abushaban123';
+$pass = 'root';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $pass);

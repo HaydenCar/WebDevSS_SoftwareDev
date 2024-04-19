@@ -1,8 +1,8 @@
 <?php
 $dbhost = "localhost";
 $dbuser = "root";
-$dbpass = "Abushaban123";
-$dbname = "login_sample";
+$dbpass = "root";
+$dbname = "combined_db";
 
 try {
     $pdo = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
