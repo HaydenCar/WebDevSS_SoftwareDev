@@ -20,6 +20,7 @@ if (isset($_POST['submit'])) {
         ]);
 
         echo "Booking successful!";
+        // Redirect to a confirmation page
         header('Location: booking_success.php');
     } catch (PDOException $e) {
         die("Booking failed: " . $e->getMessage());
