@@ -23,6 +23,10 @@ if (isset($_GET['event_id']) && !empty($_GET['event_id'])) {
         <html lang="en">
         <head>
             <meta charset="UTF-8">
+<<<<<<< HEAD
+=======
+
+>>>>>>> efb7316e641bd2e15ea3c1b6e848e3e3ceec32ea
             <title>Book Tickets for <?php echo htmlspecialchars($event['event_name']); ?></title>
         </head>
         <body>
@@ -32,8 +36,13 @@ if (isset($_GET['event_id']) && !empty($_GET['event_id'])) {
         <p>Venue: <?php echo isset($event['venue']) ? htmlspecialchars($event['venue']) : 'Not available'; ?></p>
         <p>Price: $<?php echo isset($event['price']) ? htmlspecialchars($event['price']) : 'Not available'; ?></p>
 
+<<<<<<< HEAD
         <!-- Booking Form -->
         <form action="handle_booking.php" method="post">
+=======
+
+        <form action="booking_success.php" method="post">
+>>>>>>> efb7316e641bd2e15ea3c1b6e848e3e3ceec32ea
             User ID: <input type="text" name="user_id" value="1" readonly><br>
             Event ID: <input type="hidden" name="event_id" value="<?php echo htmlspecialchars($event['event_id']); ?>"><br>
             Quantity: <input type="number" name="quantity" min="1" value="2" required><br>
