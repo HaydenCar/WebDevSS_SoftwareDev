@@ -34,13 +34,15 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
             // Redirect to the login page after successful registration
             header("Location: login.php");
             die;
-        } else {
+        }
+        else {
             $message = "Username must be at least 5 characters and password must be at least 4 characters.";
         }
-    } else {
-        // Display an error message if the input validation fails
-        $message = "Please enter some valid information!";
     }
+        else {
+        // Display an error message if the input validation fails
+            $message = "Please enter some valid information!";
+        }
 }
 ?>
 

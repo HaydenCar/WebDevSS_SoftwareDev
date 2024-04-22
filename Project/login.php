@@ -19,6 +19,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     $user_name = $_POST['user_name'];
     $password = $_POST['password'];
 
+
     // Ensure username and password are not empty and username is not numeric
     if(!empty($user_name) && !empty($password) && !is_numeric($user_name)) {
         // Prepare a query to select the user from the database based on the username
@@ -77,18 +78,18 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
         }
     </style>
 
-    <div id = "box">
-        <form method ="post">
-            <div style="font-size: 20px;margin:10px;color: white;">Login</div>
+    <div id="box">
+        <form method="post">
+            <div style="font-size: 20px;margin: 10px;color: white;">Login</div>
+            <?php if(!empty($message)): ?>
+                <p style="color: red"><?php echo $message; ?></p>
+            <?php endif; ?>
+            <input id="text" type="text" name="user_name" placeholder="Username"><br><br>
+            <input id="text" type="password" name="password" placeholder="Password"><br><br>
 
-            <input id="text" type="text" name = "user_name"><br><br>
-            <input id="text" type="password" name = "password"><br><br>
+            <input id="button" type="submit" value="Login"><br><br>
 
-            <input id="button" type="submit" value = "login"><br><br>
-
-            <a href ="signup.php"> Click to Signup</a>
-
-
+            <a href="signup.php">Click to Sign Up</a>
         </form>
     </div>
     </body>
