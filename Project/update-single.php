@@ -6,19 +6,17 @@ include("connection.php");  // Ensure this file sets $pdo correctly
 include("common.php");
 
 if (isset($_POST['submit'])) {
-    $sql = "SELECT * FROM users";
     try {
+        $sql = "UPDATE users
+                SET user_name = :user_name,
+                    password = :password
+                WHERE user_id = :user_id";
         $user =[
             "user_id" => escape($_POST['user_id']),
             "user_name" => escape($_POST['user_name']),
-            "password" => escape($_POST['password']),
-            "date" => escape($_POST['date'])
+            "password" => escape($_POST['password'])
         ];
-        $sql = "UPDATE users
-                SET user_name = :user_name,
-                    password = :password,
-                    date = :date
-                WHERE user_id = :user_id";
+
         $statement = $pdo->prepare($sql);
         $statement->execute($user);
     } catch(PDOException $error) {
@@ -27,9 +25,10 @@ if (isset($_POST['submit'])) {
 }
 
 if (isset($_GET['user_id'])) {
+    $sql = "SELECT * FROM users WHERE user_id = :user_id";
+
     try {
         $user_id = $_GET['user_id'];
-        $sql = "SELECT * FROM users WHERE user_id = :user_id";
         $statement = $pdo->prepare($sql);
         $statement->bindValue(':user_id', $user_id);
         $statement->execute();
