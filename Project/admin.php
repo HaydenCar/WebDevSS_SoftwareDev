@@ -4,11 +4,15 @@ include("eventConnection.php");
 include("connection.php");
 include("function.php");
 
+if (!isset($_SESSION['user_id']) || $_SESSION['user_id'] != '1') {
+    header('Location: index.php');
+    exit;
+}
+
 try {
     global $pdo;
     require 'layout/header.php';
 
-    // Check if $pdo is initialized and connected
     if (!$pdo) {
         die("Connection failed: " . $pdo->errorInfo());
     }
@@ -16,7 +20,7 @@ try {
     $sql = "SELECT * FROM users";
     $statement = $pdo->prepare($sql);
     $statement->execute();
-    $result = $statement->fetchAll(PDO::FETCH_ASSOC);  // Fetch as associative array
+    $result = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 } catch(PDOException $error) {
     echo "Error executing query: " . $error->getMessage();
@@ -26,7 +30,7 @@ try {
 <table>
     <thead>
     <tr>
-        <th>#</th>
+        <th>User ID</th>
         <th>Username</th>
         <th>Password</th>
         <th>Date</th>
@@ -36,7 +40,7 @@ try {
     <tbody>
     <?php foreach ($result as $row) : ?>
         <tr>
-            <td><?php echo htmlspecialchars($row["id"]); ?></td>
+            <td><?php echo htmlspecialchars($row["user_id"]); ?></td>
             <td><?php echo htmlspecialchars($row["user_name"]); ?></td>
             <td><?php echo htmlspecialchars($row["password"]); ?></td>
             <td><?php echo htmlspecialchars($row["date"]); ?> </td>

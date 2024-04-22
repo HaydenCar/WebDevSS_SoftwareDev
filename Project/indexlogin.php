@@ -17,11 +17,8 @@ $user_data = check_login($pdo);
     </head>
     <body>
 
-    <a href = "logout.php"> Logout</a>
-    <h1> This is the index page</h1>
-
-    <br>
-    Hello, <?php echo $user_data['user_name']; ?>
+    <a href = "logout.php"> Click here to Logout</a>
+    <h1> You are logged in as <?php echo $user_data['user_name']?></h1>
     </body>
     </html>
 </DOCTYPE>

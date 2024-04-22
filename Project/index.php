@@ -23,7 +23,7 @@
                                         Dive into the heart of the nightlife with our curated events and top-tier concert experiences. Whether it’s the pulse of the dance floor or the surge of live music, we connect you with unforgettable moments.
                                     </p>
                                     <div class="btn-box">
-                                        <a href="" class="btn1">
+                                        <a href="chooseEvents.php" class="btn1">
                                             Discover Events
                                         </a>
                                     </div>
@@ -45,7 +45,7 @@
                                         From intimate gigs to major festivals, explore a diverse lineup of musical talents and genres. Embrace the live music scene with events that resonate with your rhythm.
                                     </p>
                                     <div class="btn-box">
-                                        <a href="" class="btn1">
+                                        <a href="listEvents.php?type=Concert" class="btn1">
                                             Find Concerts
                                         </a>
                                     </div>
@@ -67,7 +67,7 @@
                                         Step into the vibrant world of nightclubs and exclusive parties. Discover venues that set the stage for nights filled with music, dance, and memories waiting to be made.
                                     </p>
                                     <div class="btn-box">
-                                        <a href="" class="btn1">
+                                        <a href="listEvents.php?type=Nightclub" class="btn1">
                                             Join the Party
                                         </a>
                                     </div>
