@@ -10,6 +10,7 @@ error_reporting(E_ALL);
 // Include the database connection file
 require 'eventConnection.php'; // Adjust this path as necessary
 require 'layout/header.php';
+
 // Check if the form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Gather form data
@@ -18,20 +19,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $quantity = $_POST['quantity'];
     $email = $_POST['email'];
     $phone_number = $_POST['phone_number'];
+    $card_number = $_POST['card_number']; // Retrieve card number
+    $cardholder_name = $_POST['cardholder_name']; // Retrieve cardholder name
+    $expiration_date = $_POST['expiration_date']; // Retrieve expiration date
+    $cvv = $_POST['cvv']; // Retrieve CVV
 
-    // Prepare the INSERT statement
-    $sql = "INSERT INTO bookings (user_id, event_id, quantity, email, phone_number) VALUES (:user_id, :event_id, :quantity, :email, :phone_number)";
+    // Prepare the INSERT statement with the new fields
+    $sql = "INSERT INTO bookings (user_id, event_id, quantity, email, phone_number, card_number, cardholder_name, expiration_date, cvv) 
+        VALUES (:user_id, :event_id, :quantity, :email, :phone_number, :card_number, :cardholder_name, :expiration_date, :cvv)";
+
     try {
         $stmt = $pdo->prepare($sql);
 
-        // Bind parameters and execute
-        $stmt->execute([
-            ':user_id' => $user_id,
-            ':event_id' => $event_id,
-            ':quantity' => $quantity,
-            ':email' => $email,
-            ':phone_number' => $phone_number
-        ]);
+        // Bind parameters
+        $stmt->bindParam(':user_id', $user_id);
+        $stmt->bindParam(':event_id', $event_id);
+        $stmt->bindParam(':quantity', $quantity);
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':phone_number', $phone_number);
+        $stmt->bindParam(':card_number', $card_number);
+        $stmt->bindParam(':cardholder_name', $cardholder_name);
+        $stmt->bindParam(':expiration_date', $expiration_date);
+        $stmt->bindParam(':cvv', $cvv);
+
+        // Execute the prepared statement
+        $stmt->execute();
 
         // Check if the booking was successful
         if ($stmt->rowCount() > 0) {
@@ -65,4 +77,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 require 'layout/footer.php';
 ?>
-

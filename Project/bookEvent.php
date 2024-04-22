@@ -49,6 +49,10 @@ if (isset($_SESSION['user_id'])) {
                 Quantity: <input type="number" name="quantity" min="1" value="2" required><br>
                 Email: <input type="email" name="email" value="example@example.com" required><br>
                 Phone Number: <input type="tel" name="phone_number" value="123-456-7890" required><br>
+                Card Number: <input type="text" name="card_number" required><br>
+                Cardholder Name: <input type="text" name="cardholder_name" required><br>
+                Expiration Date: <input type="date" name="expiration_date" required><br>
+                CVV: <input type="text" name="cvv" required><br>
                 <input type="submit" value="Submit Booking">
             </form>
 
