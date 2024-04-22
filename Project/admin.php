@@ -1,48 +1,49 @@
 <?php
-/**
- * List all users with a link to edit
- */
+session_start();
+include("eventConnection.php");
+include("connection.php");
+include("function.php");
+
 try {
     global $pdo;
     require 'layout/header.php';
+
+    // Check if $pdo is initialized and connected
+    if (!$pdo) {
+        die("Connection failed: " . $pdo->errorInfo());
+    }
+
     $sql = "SELECT * FROM users";
-    $statement = $connection->prepare($sql);
+    $statement = $pdo->prepare($sql);
     $statement->execute();
-    $result = $statement->fetchAll();
+    $result = $statement->fetchAll(PDO::FETCH_ASSOC);  // Fetch as associative array
+
 } catch(PDOException $error) {
-    echo $sql . "<br>" . $error->getMessage();
+    echo "Error executing query: " . $error->getMessage();
 }
 ?>
-<?php require "layout/header.php"; ?>
-    <h2>Update users</h2>
-    <table>
-        <thead>
+<h2>Update users</h2>
+<table>
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Username</th>
+        <th>Password</th>
+        <th>Date</th>
+        <th>Edit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <?php foreach ($result as $row) : ?>
         <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email Address</th>
-            <th>Age</th>
-            <th>Location</th>
-            <th>Date</th>
-            <th>Edit</th>
+            <td><?php echo htmlspecialchars($row["id"]); ?></td>
+            <td><?php echo htmlspecialchars($row["user_name"]); ?></td>
+            <td><?php echo htmlspecialchars($row["password"]); ?></td>
+            <td><?php echo htmlspecialchars($row["date"]); ?> </td>
+            <td><a href="update-single.php?id=<?php echo htmlspecialchars($row["id"]); ?>">Edit</a></td>
         </tr>
-        </thead>
-        <tbody>
-        <?php foreach ($result as $row) : ?>
-            <tr>
-                <td><?php echo escape($row["id"]); ?></td>
-                <td><?php echo escape($row["firstname"]); ?></td>
-                <td><?php echo escape($row["lastname"]); ?></td>
-                <td><?php echo escape($row["email"]); ?></td>
-                <td><?php echo escape($row["age"]); ?></td>
-                <td><?php echo escape($row["location"]); ?></td>
-                <td><?php echo escape($row["date"]); ?> </td>
-                <td><a href="update-single.php?id=<?php echo escape($row["id"]);
-                    ?>">Edit</a></td>
-            </tr>
-        <?php endforeach; ?>
-        </tbody>
-    </table>
-    <a href="index.php">Back to home</a>
+    <?php endforeach; ?>
+    </tbody>
+</table>
+<a href="index.php">Back to home</a>
 <?php require "layout/footer.php"; ?>
