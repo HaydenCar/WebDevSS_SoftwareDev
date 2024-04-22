@@ -52,7 +52,7 @@
                     <p>
                         At the heart of the city's pulsating nightlife, our mission is to craft unforgettable nights filled with music, dance, and memorable moments. From the hottest nightclubs to the most electrifying concert events, we are your gateway to the ultimate entertainment experience. Our team is passionate about bringing people together, creating spaces where joy, music, and celebration meet. With a handpicked selection of venues and a keen eye for the finest musical acts, we ensure every event we curate is nothing short of spectacular. Discover the magic of the night with us, where every event is a journey into the world of extraordinary experiences.
                     </p>
-                    <a href="">
+                    <a href="EventPageManager.php">
                         Learn More
                     </a>
                 </div>

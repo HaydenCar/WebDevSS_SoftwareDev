@@ -115,7 +115,7 @@
                             <p>
                                 Experience the essence of nightlife with our selection of club nights. Each event is a journey into the heart of music and dance, offering a unique atmosphere and energy.
                             </p>
-                            <a href="">
+                            <a href="about.php">
                                 Read More
                             </a>
                         </div>
@@ -133,7 +133,7 @@
                             <p>
                                 From emerging talents to global icons, our live concerts span genres and styles, delivering powerful performances and unforgettable memories.
                             </p>
-                            <a href="">
+                            <a href="about.php">
                                 Read More
                             </a>
                         </div>
@@ -151,7 +151,7 @@
                             <p>
                                 Get lost in the beats with DJ sets and electronic music events that showcase cutting-edge soundscapes and vibrant dance floors.
                             </p>
-                            <a href="">
+                            <a href="about.php">
                                 Read More
                             </a>
                         </div>
@@ -169,7 +169,7 @@
                             <p>
                                 Dive into exclusive parties with curated themes, top-tier entertainment, and a guest list that guarantees an elite nightlife experience.
                             </p>
-                            <a href="">
+                            <a href="about.php">
                                 Read More
                             </a>
                         </div>
@@ -198,7 +198,7 @@
                     <p>
                         At the core of the nightlife and concert scene, we stand as a beacon for those seeking the thrill of live music, dance, and social gatherings. Our passion for creating spaces where memories are made and shared drives us to deliver only the best events.
                     </p>
-                    <a href="">
+                    <a href="about.php">
                         Read More
                     </a>
                 </div>
@@ -213,7 +213,7 @@
 <!-- end about section -->
 
 <!-- client section -->
-
+<!--
 <section class="client_section layout_padding">
     <div class="container">
         <div class="heading_container">
@@ -233,7 +233,7 @@
                             </div>
                             <div class="client_id">
                                 <div class="img-box">
-                                    <img src="images/guest-1.png" alt="" class="img-1">
+                                    <img src="images/client-1.png" alt="" class="img-1">
                                 </div>
                                 <div class="name">
                                     <h6>
@@ -255,7 +255,7 @@
                             </div>
                             <div class="client_id">
                                 <div class="img-box">
-                                    <img src="images/guest-2.png" alt="" class="img-1">
+                                    <img src="images/client-2.png" alt="" class="img-1">
                                 </div>
                                 <div class="name">
                                     <h6>
@@ -277,7 +277,7 @@
                             </div>
                             <div class="client_id">
                                 <div class="img-box">
-                                    <img src="images/dj-1.png" alt="" class="img-1">
+                                    <img src="images/client-1.png" alt="" class="img-1">
                                 </div>
                                 <div class="name">
                                     <h6>
@@ -299,7 +299,7 @@
                             </div>
                             <div class="client_id">
                                 <div class="img-box">
-                                    <img src="images/artist-1.png" alt="" class="img-1">
+                                    <img src="images/client-2.png" alt="" class="img-1">
                                 </div>
                                 <div class="name">
                                     <h6>
@@ -317,7 +317,7 @@
         </div>
     </div>
 </section>
-
+-->
 <!-- end client section -->
 <!-- contact section -->
 <section class="contact_section">
@@ -353,13 +353,6 @@
                             </button>
                         </div>
                     </form>
-                </div>
-            </div>
-            <div class="col-lg-7 col-md-6 px-0">
-                <div class="map_container">
-                    <div class="map">
-                        <div id="googleMap"></div>
-                    </div>
                 </div>
             </div>
         </div>
