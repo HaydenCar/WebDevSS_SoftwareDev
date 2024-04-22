@@ -9,7 +9,7 @@ error_reporting(E_ALL);
 
 // Include the database connection file
 require 'eventConnection.php'; // Adjust this path as necessary
-
+require 'layout/header.php';
 // Check if the form was submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Gather form data
@@ -63,5 +63,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Not a POST request
     echo "Invalid request.";
 }
+require 'layout/footer.php';
 ?>
 
