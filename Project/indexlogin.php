@@ -25,3 +25,5 @@ $user_data = check_login($pdo);
     </body>
     </html>
 </DOCTYPE>
+
+<?php require "layout/footer.php" ?>
