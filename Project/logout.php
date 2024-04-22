@@ -1,13 +1,11 @@
 <?php
 session_start();
-
-if(isset($_SESSION['user_id']))
-{
-    unset($_SESSION['user_id']);
-
-}
-
-header("Location: login.php");
-die;
+// Unset all session variables
+$_SESSION = array();
+// Destroy the session
+session_destroy();
+// Redirect to login page
+header("Location: UserLogin.php");
+exit;
 ?>
 

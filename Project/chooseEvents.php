@@ -1,21 +1,16 @@
 <?php
-// Start a session to manage user session data
 session_start();
+require 'layout/header.php'; // Include the header layout
 
-// Include the header layout
-require 'layout/header.php';
-
-// Include the database connection for the event
-require 'eventConnection.php';
-
-// Check if the session variable 'user_id' is not set, which means the user is not logged in
+// Check if the user is not logged in
 if (!isset($_SESSION['user_id'])) {
     // Redirect to the login page
-    header('Location: login.php');
+    header('Location: UserLogin.php');
     exit;
 }
 
-// If the script continues beyond this point, it means the user is logged in
+// Database connection for the event (Assuming needed for something else on this page)
+require 'eventConnection.php';
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +18,7 @@ if (!isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <title>Choose Event Type</title>
+    <!-- Stylesheets -->
 </head>
 <body>
 <h1>Buy Tickets</h1>
@@ -30,3 +26,4 @@ if (!isset($_SESSION['user_id'])) {
 <a href="listEvents.php?type=Nightclub">Nightclub Tickets</a>
 </body>
 </html>
+<?php require 'layout/footer.php'; ?>

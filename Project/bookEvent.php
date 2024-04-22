@@ -69,7 +69,7 @@ if (isset($_SESSION['user_id'])) {
     }
 } else {
     // Redirect the user to the login page if not logged in
-    header("Location: login.php");
+    header("Location: UserLogin.php");
     exit; // Terminate script execution after redirect
 }
 ?>

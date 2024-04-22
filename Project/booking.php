@@ -5,7 +5,7 @@ require 'eventConnection.php';  // Your PDO database connection script
 session_start();
 
 if (!isset($_SESSION['user_id'])) {
-    header('Location: login.php');
+    header('Location: UserLogin.php');
     exit;
 }
 
