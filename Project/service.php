@@ -76,7 +76,7 @@
                             <p>
                                 Secure your spot at the hottest nightclubs. Enjoy VIP access, table service, and a night to remember.
                             </p>
-                            <a href="chooseEvents.php">
+                            <a href="EventPageManager.php">
                                 Learn More
                             </a>
                         </div>
@@ -94,7 +94,7 @@
                             <p>
                                 Get front-row tickets to see your favorite artists. Explore our packages for an all-inclusive concert experience.
                             </p>
-                            <a href="chooseEvents.php">
+                            <a href="EventPageManager.php">
                                 Discover More
                             </a>
                         </div>
@@ -112,7 +112,7 @@
                             <p>
                                 Book top DJs for your private events or club nights. Let us handle the vibes while you dance the night away.
                             </p>
-                            <a href="chooseEvents.php">
+                            <a href="EventPageManager.php">
                                 Read More
                             </a>
                         </div>
@@ -130,7 +130,7 @@
                             <p>
                                 From intimate gatherings to grand-scale concerts, our team will ensure your event is a seamless success.
                             </p>
-                            <a href="chooseEvents.php">
+                            <a href="EventPageManager.php">
                                 Learn More
                             </a>
                         </div>

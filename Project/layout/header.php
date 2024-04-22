@@ -72,7 +72,7 @@
                             <a class="nav-link" href="about.php">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="chooseEvents.php">Buy Tickets</a>
+                            <a class="nav-link" href="EventPageManager.php">Buy Tickets</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="UserLogin.php">Login</a>
