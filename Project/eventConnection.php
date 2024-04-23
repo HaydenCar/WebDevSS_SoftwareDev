@@ -12,3 +12,4 @@ try {
     die("Could not connect to the database $dbname :" . $e->getMessage());
 }
 ?>
+`

@@ -41,7 +41,7 @@ if (isset($_SESSION['user_id'])) {
             <p>Price: €<?php echo isset($event['price']) ? htmlspecialchars($event['price']) : 'Not available'; ?></p>
 
             <!-- Booking Form -->
-            <form action="handle_booking.php" method="post">
+            <form action="EventBookingHandler.php" method="post">
                 <!-- Hidden User ID field pre-populated with the user's ID -->
                 <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($user_id); ?>">
                 <!-- Hidden Event ID field pre-populated with the event's ID -->
