@@ -37,7 +37,7 @@ class EventFetcher {
                         <p>Date: " . htmlspecialchars($event['event_date']) . "</p>
                         <p>Price: €" . htmlspecialchars($event['price']) . "</p>
                         <p>" . htmlspecialchars($event['description']) . "</p>
-                        <a href='bookEvent.php?event_id=" . htmlspecialchars($event['event_id']) . "'>Book Now</a>
+                        <a href='EventBooker.php?event_id=" . htmlspecialchars($event['event_id']) . "'>Book Now</a>
                       </div>";
                 echo "<p style='color: red; font-weight: bold;'>Tickets are selling fast! Don't miss your chance!</p>";
             }
