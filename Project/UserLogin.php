@@ -1,8 +1,8 @@
 <?php
-// Include the header layout for consistent page appearance
+
 require 'layout/header.php';
 
-// Start or resume a session to maintain user state across pages
+// Start session to maintain user state across pages
 session_start();
 
 // Redirect logged in users to the home page
@@ -15,12 +15,11 @@ if (isset($_SESSION['user_id'])) {
 // Define the UserLogin class to handle the login process
 class UserLogin {
     private $pdo; // PDO connection object
-    public $message = ""; // Message to display login errors or information
+    public $message = "";
 
     // Constructor to initialize the class with a PDO object
     public function __construct($pdo) {
         $this->pdo = $pdo;
-        // Ensure a session is started (not typically necessary to start a session more than once)
         session_start();
     }
 
@@ -80,7 +79,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 </head>
 <body>
 <style type="text/css">
-    /* Custom CSS styles for the login page */
+
 </style>
 
 <div id="box">
@@ -101,6 +100,5 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
 </body>
 </html>
 <?php
-// Include the footer layout for consistent page appearance
 require "layout/footer.php";
 ?>

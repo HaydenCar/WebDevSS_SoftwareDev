@@ -12,11 +12,11 @@ $username = 'root';
 $password = 'root';
 
 try {
-    // Attempt to connect using the defined credentials and set error mode to exception
+
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    // Stop script and output error message if connection fails
+
     die("Could not connect to the database $dbname :" . $e->getMessage());
 }
 
@@ -37,7 +37,7 @@ class UserRegistration {
     public function registerUser($userName, $password) {
         // Validate input for minimum length requirements
         if (!empty($userName) && !empty($password) && strlen($userName) >= 5 && strlen($password) >= 4) {
-            $userId = random_num(20); // Generate a random user ID
+            $userId = random_num(5);
             $query = "INSERT INTO users (user_id, user_name, password, date) VALUES (:user_id, :user_name, :password, NOW())";
             $stmt = $this->pdo->prepare($query);
             // Execute the query and redirect if successful
